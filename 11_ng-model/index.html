@@ -1,0 +1,36 @@
+<html ng-app="app">
+<head>
+
+</head>
+  <body>
+
+    <!--causa problemas devido a herança de tipo primitivos em javascript-->
+    <!--<div ng-controller="MainController">
+      <input ng-model="mydata">
+      <button type="button" name="button" ng-click="mydata='123'">123</button>
+      <h1>{{mydata}}</h1>
+      <div ng-controller="SubController">
+        <input ng-model="mydata">
+        <button type="button" name="button" ng-click="mydata='123'">123</button>
+        <h1>{{mydata}}</h1>
+      </div>
+    </div>-->
+    <div ng-controller="MainController">
+      <input ng-model="mydata.">
+      <button type="button" name="button" ng-click="mydata.='123'">123</button>
+      <h1>{{mydata.}}</h1>
+      <div ng-controller="SubController">
+        <input ng-model="mydata.">
+        <button type="button" name="button" ng-click="mydata.='123'">123</button>
+        <h1>{{mydata.}}</h1>
+      </div>
+    </div>
+
+    <script type="text/ng-template" id="master.html">
+      <h1>My template</h1>
+    </script>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<html ng-app="app">
+<head>
+    <style type="text/css">
+      .orange{
+        color: orange;
+      }
+
+      .italic{
+        font-style: italic;
+      }
+    </style>
+</head>
+  <body>
+
+    <div ng-controller="MainController">
+      <h1 ng-class="varClass">Simples</h1>
+      <h1 ng-class="[varClass, 'italic']">Dois Estilos</h1>
+      <h1 ng-class="{orange : controleClass}">Toggle</h1>
+      <h1 ng-class="{orange : controleClass, italic: controleClass}">Toggle Duplo</h1>
+    </div>
+    
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
