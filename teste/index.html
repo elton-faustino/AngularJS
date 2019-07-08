@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+
+    <style>
+            .page{            
+                background-color:purple;
+                margin: 5px;
+                padding: 5px;
+                font-family: 'Verdana';
+                color: black
+            }
+
+            .comment{
+                background-color:white;
+                padding: 5px 0px;
+                margin: 5px 0px;
+                letter-spacing: 1px;
+                text-indent: 3px;
+            }
+    </style>
+
+    <body ng-app="app">
+        
+        <div ng-class="'page'" ng-controller="MainController">
+
+            <div> 
+                    <input type="text" ng-model="comentario">
+            
+                    <button ng-click="adicionarComentario(comentario)">Adicionar Comentario</button>
+            </div>
+            
+            <div ng-class="'comment'" ng-repeat="comentario in comentarios | reverse" >
+                <div >
+                    {{comentario}}
+                </div>
+            </div>
+                
+        </div>
+        
+
+        <script type="text/javascript" src="angular.min.js"></script>
+        <script type="text/javascript" src="app.js"></script> 
+    </body>
+</html>
