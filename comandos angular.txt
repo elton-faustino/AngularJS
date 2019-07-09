@@ -1,0 +1,31 @@
+ng-app
+ng-controller
+ng-hide
+ng-show
+ng-click
+ng-repeat
+ng-repeat-start
+ng-repeat-end
+ng-template
+ng-include
+ng-model
+ng-cloak
+
+item in elements track by $index
+$first
+$middle
+$last
+$even
+$odd
+
+$scope.$watch
+$scope.breakit = $scope.$watch //para remover um watch, atribuí-lo a um método
+x'
+<div ng-repeat="user in mydata.arr | filter:filtro | orderBy:'age' | limitTo:2">
+
+app.filter('charlimit', function(){
+  return function(input, length){
+
+app.constant('twitterAPI',{url: "api.twitter.com/v1/"})
+app.value('MeuServico', function(){return "Isso é uma função."})
+app.factory('myFactory',function(){
