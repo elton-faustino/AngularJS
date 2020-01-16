@@ -1,0 +1,9 @@
+myDirective
+
+<my-directive></my-directive>
+
+<div my-directive></div>
+
+<div class="my-directive"></div>
+
+<!-- my-directive -->
