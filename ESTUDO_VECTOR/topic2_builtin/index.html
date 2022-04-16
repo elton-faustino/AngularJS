@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>
+        Hello {{5+5}}
+    </h1>
+
+    <div ng-controller="MainController">
+
+        <div ng-repeat="e in myarr track by $index">
+            {{ e }} : {{ $index }} : {{ $first }} : {{ $middle }} : {{ $last }}
+        </div>
+
+        <div ng-repeat-start="user in users">
+            {{ user._id }}
+            <a href="">{{ user.picture }}</a>
+        </div>
+        <hr ng-repeat-end/>
+
+        <div ng-repeat="o in obj">
+            {{ o }}
+        </div>
+
+    </div>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script> -->
+    <script type="text/javascript" src="elton.js"></script>
+</body>
+
+</html>

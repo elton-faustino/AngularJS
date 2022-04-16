@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div ng-cloak ng-controller="MainController">
+        <!-- <input type="text" ng-model="myfilter.str"> {{myfilter.str | uppercase}}
+        <input type="text" ng-model="myfilter.str"> {{myfilter.str | date}} -->
+        <!-- <input type="text" ng-model="myfilter.str"> -->
+        <!-- <div ng-repeat="user in mydata.arr | filter:myfilter | orderBy:'age' | limitTo:10"> -->
+        <!-- {{ myfilter.str | meuFiltro}} -->
+        <!-- </div> -->
+        <input type="text" ng-model="myage">
+        <div ng-repeat="user in mydata.arr | idadeMinima:myage">
+            {{user}}:
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script type="text/javascript" src="elton.js"></script>
+</body>
+
+</html>
